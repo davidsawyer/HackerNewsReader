@@ -40,7 +40,7 @@
 
     NSArray *comments = (NSArray *)[self.commentParser commentsFromParser:parser queries:queries];
 
-    static NSString * const textQuery = @"//table[@id='hnmain']/tr[3]/td/table[1]/tr[4]/td[2]";
+    static NSString * const textQuery = @"//table[@id='hnmain']/tr[4]/td/table[1]/tr[4]/td[2]";
     TFHppleElement *textNode = [[parser searchWithXPathQuery:textQuery] firstObject];
     NSArray *textComponets = nil;
     if ([[textNode content] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length) {
